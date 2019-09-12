@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context antiJARLocking="true" path="exemploAcesso">
+	<Realm className="org.apache.catalina.realm.JDBCRealm" 
+            debug="4"
+            driverName="org.postgresql.Driver"
+            connectionURL="jdbc:postgresql://locahost:5432/exemplo_acesso"
+            connectionName="postgres"
+            connectionPassword="123"
+            userTable="usuario"
+            userNameCol="ds_login"
+            userCredCol="ds_senha"
+            userRoleTable="papel_usuario"
+            roleNameCol="ds_papel"
+        />
+</Context>
